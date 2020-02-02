@@ -1,3 +1,7 @@
+body {
+  background: url("/images/2b.jpg");
+  background-attachment: fixed;
+}
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -1153,7 +1157,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #b50fcd;
+  background: #ff52a4;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
