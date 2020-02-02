@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-  
-  <title>t1 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.7.1',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
   <meta name="description" content="MVision　Machine Vision 机器视觉AI算法工程师手册 数学基础 统计学习 深度学习 自然语言处理 工具使用 AI 安全数据科学和算法  澳大利亚机器人视觉研究中心 NIPS Neural Information Processing Systems icml Proceedings of Machine Learning Research PMLR ICDM IEEE Inte">
 <meta property="og:type" content="article">
 <meta property="og:title" content="t1">
@@ -18,75 +57,155 @@
 <meta property="article:modified_time" content="2020-02-02T10:58:31.407Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+<link rel="canonical" href="http://yoursite.com/2020/02/02/t1/">
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>t1 | Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-t1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/02/02/t1/" class="article-date">
-  <time datetime="2020-02-02T10:58:24.400Z" itemprop="datePublished">2020-02-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 class="article-title" itemprop="name">
-      t1
-    </h1>
   
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/02/t1/">
 
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          t1
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-02-02 18:58:24 / Modified: 18:58:31" itemprop="dateCreated datePublished" datetime="2020-02-02T18:58:24+08:00">2020-02-02</time>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
         <h1 id="MVision-Machine-Vision-机器视觉"><a href="#MVision-Machine-Vision-机器视觉" class="headerlink" title="MVision　Machine Vision 机器视觉"></a>MVision　Machine Vision 机器视觉</h1><p><a href="http://www.huaxiaozhuan.com/" target="_blank" rel="noopener">AI算法工程师手册 数学基础 统计学习 深度学习 自然语言处理 工具使用</a></p>
 <p><a href="https://github.com/Ewenwan/AI-Security-Learning" target="_blank" rel="noopener">AI 安全数据科学和算法 </a></p>
@@ -413,109 +532,185 @@ Webinar最后展示了MeshStereo在深度估计以及新视角渲染两个任务
 <h2 id="8-会议-期刊"><a href="#8-会议-期刊" class="headerlink" title="8 会议　期刊　"></a>8 会议　期刊　</h2><h3 id="CVPR-Computer-vision-and-Pattern-Reconition-计算机视觉和模式识别"><a href="#CVPR-Computer-vision-and-Pattern-Reconition-计算机视觉和模式识别" class="headerlink" title="CVPR Computer vision  and  Pattern Reconition 计算机视觉和模式识别"></a>CVPR Computer vision  and  Pattern Reconition 计算机视觉和模式识别</h3><h3 id="ECCV-European-Conference-on-Computer-Vision-欧洲计算机视觉国际会议"><a href="#ECCV-European-Conference-on-Computer-Vision-欧洲计算机视觉国际会议" class="headerlink" title="ECCV European Conference on Computer Vision   欧洲计算机视觉国际会议"></a>ECCV European Conference on Computer Vision   欧洲计算机视觉国际会议</h3><h3 id="ICCV-IEEE-International-Conference-on-Computer-Vision-国际计算机视觉大会"><a href="#ICCV-IEEE-International-Conference-on-Computer-Vision-国际计算机视觉大会" class="headerlink" title="ICCV IEEE International Conference on Computer Vision  国际计算机视觉大会"></a>ICCV IEEE International Conference on Computer Vision  国际计算机视觉大会</h3><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p><a href="http://www.ipcv.org/otherpaper/" target="_blank" rel="noopener">其他</a><br>###<br>###<br>###<br>###</p>
 <h2 id="AR-amp-VR"><a href="#AR-amp-VR" class="headerlink" title="AR&amp;VR"></a>AR&amp;VR</h2><p><a href="http://www.ipcv.org/category/top-dir/arvr/" target="_blank" rel="noopener">参考</a></p>
 <h2 id=""><a href="#" class="headerlink" title=""></a></h2>
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/02/t1/" data-id="ck64xifc60001dwtdgh1w27n6" class="article-share-link">Share</a>
-      
-      
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/02/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MVision-Machine-Vision-机器视觉"><span class="nav-number">1.</span> <span class="nav-text">MVision　Machine Vision 机器视觉</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#无人驾驶的各个方面知识"><span class="nav-number">2.</span> <span class="nav-text">无人驾驶的各个方面知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#无人驾驶面试知识点"><span class="nav-number">2.1.</span> <span class="nav-text">无人驾驶面试知识点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公司"><span class="nav-number">2.2.</span> <span class="nav-text">公司</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初创公司："><span class="nav-number">2.2.1.</span> <span class="nav-text">初创公司：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#上市公司："><span class="nav-number">2.2.2.</span> <span class="nav-text">上市公司：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#知名外企："><span class="nav-number">2.2.3.</span> <span class="nav-text">知名外企：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0-计算摄影-摄影几何"><span class="nav-number">2.3.</span> <span class="nav-text">0 计算摄影　摄影几何</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图像形变-Image-warping"><span class="nav-number">2.3.1.</span> <span class="nav-text">图像形变 Image warping</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#色彩增强-转换-Color-transfer"><span class="nav-number">2.3.2.</span> <span class="nav-text">色彩增强&#x2F;转换　Color transfer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图像修补-Image-repair"><span class="nav-number">2.3.3.</span> <span class="nav-text">图像修补 Image repair</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图像去噪-Image-denoise"><span class="nav-number">2.3.4.</span> <span class="nav-text">图像去噪 Image denoise</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图像去模糊-Image-deblur"><span class="nav-number">2.3.5.</span> <span class="nav-text">图像去模糊 Image deblur</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图像滤波-Image-filter"><span class="nav-number">2.3.6.</span> <span class="nav-text">图像滤波 Image filter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#超分辨率-Super-resolution"><span class="nav-number">2.3.7.</span> <span class="nav-text">超分辨率 Super-resolution</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-三维重建-3D-Modeling"><span class="nav-number">2.4.</span> <span class="nav-text">1　三维重建 3D Modeling</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#相机矫正-Camera-calibration"><span class="nav-number">2.4.1.</span> <span class="nav-text">相机矫正　Camera calibration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#非刚体重建-Non-rigid-modeling"><span class="nav-number">2.4.2.</span> <span class="nav-text">非刚体重建　Non-rigid modeling　</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三维重构-3D-modeling"><span class="nav-number">2.4.3.</span> <span class="nav-text">三维重构 3D modeling</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-匹配-跟踪-Matching-amp-Tracking"><span class="nav-number">2.5.</span> <span class="nav-text">2  匹配&#x2F;跟踪 Matching &amp; Tracking</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-a-特征提取-Feature-extraction"><span class="nav-number">2.5.1.</span> <span class="nav-text">2.a 特征提取 Feature extraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-b-特征匹配-Feature-matching"><span class="nav-number">2.5.2.</span> <span class="nav-text">2.b 特征匹配 Feature matching</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-c-时空匹配-Space-time-matching"><span class="nav-number">2.5.3.</span> <span class="nav-text">2.c 时空匹配 Space-time matching</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-d-区域匹配-Region-matching"><span class="nav-number">2.5.4.</span> <span class="nav-text">2.d 区域匹配 Region matching</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-e-轮廓匹配-Contour-matching"><span class="nav-number">2.5.5.</span> <span class="nav-text">2.e 轮廓匹配 Contour matching</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-f-立体匹配-Stereo-matching"><span class="nav-number">2.5.6.</span> <span class="nav-text">2.f 立体匹配 Stereo matching</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-g-深度匹配-depth-matching"><span class="nav-number">2.5.7.</span> <span class="nav-text">2.g 深度匹配 depth matching</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-h-姿态跟踪-Pose-tracking"><span class="nav-number">2.5.8.</span> <span class="nav-text">2.h 姿态跟踪 Pose tracking</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-i-物体跟踪-Object-tracking"><span class="nav-number">2.5.9.</span> <span class="nav-text">2.i 物体跟踪 Object tracking</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-j-群体分析-Crowd-analysis"><span class="nav-number">2.5.10.</span> <span class="nav-text">2.j 群体分析 Crowd analysis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-k-光流场跟踪-Optical-flow"><span class="nav-number">2.5.11.</span> <span class="nav-text">2.k 光流场跟踪 Optical flow</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-语义-实例分割-amp-解析-Segmentation-amp-Parsing"><span class="nav-number">2.6.</span> <span class="nav-text">3 语义&#x2F;实例分割&amp;解析　Segmentation &amp; Parsing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-a-视频分割-Video-segmentation"><span class="nav-number">2.6.1.</span> <span class="nav-text">3.a 视频分割  Video  segmentation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-b-人体解析-Person-parsing"><span class="nav-number">2.6.2.</span> <span class="nav-text">3.b 人体解析  Person parsing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-c-场景解析-Scene-parsing"><span class="nav-number">2.6.3.</span> <span class="nav-text">3.c 场景解析  Scene  parsing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-d-边缘检测-Edge-detection"><span class="nav-number">2.6.4.</span> <span class="nav-text">3.d 边缘检测  Edge   detection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-e-图像物体分割-Image-object-segmentation"><span class="nav-number">2.6.5.</span> <span class="nav-text">3.e 图像物体分割 Image object segmentation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-f-视频物体分割-Video-object-segmentation"><span class="nav-number">2.6.6.</span> <span class="nav-text">3.f 视频物体分割 Video object segmentation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-g-交互式分割-Interactive-segmentation"><span class="nav-number">2.6.7.</span> <span class="nav-text">3.g 交互式分割   Interactive segmentation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-h-共分割-Co-segmentation"><span class="nav-number">2.6.8.</span> <span class="nav-text">3.h 共分割      Co-segmentation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-i-背景差-Background-subtraction"><span class="nav-number">2.6.9.</span> <span class="nav-text">3.i 背景差      Background subtraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-j-图像分割方面-Image-segmentation"><span class="nav-number">2.6.10.</span> <span class="nav-text">3.j 图像分割方面 Image segmentation</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-识别-检测-Recognition-amp-Detection"><span class="nav-number">2.7.</span> <span class="nav-text">4 识别&#x2F;检测　Recognition &amp; Detection</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-a-其他识别-Other-recognition"><span class="nav-number">2.7.1.</span> <span class="nav-text">4.a 其他识别 Other recognition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-b-图像检索-Image-retrieval"><span class="nav-number">2.7.2.</span> <span class="nav-text">4.b 图像检索 Image retrieval</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-c-显著检测-Saliency-detection"><span class="nav-number">2.7.3.</span> <span class="nav-text">4.c 显著检测 Saliency detection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-d-通用物体检测-Object-proposal"><span class="nav-number">2.7.4.</span> <span class="nav-text">4.d 通用物体检测 Object proposal</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-e-行为识别-Action-recognition"><span class="nav-number">2.7.5.</span> <span class="nav-text">4.e 行为识别 Action recognition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-f-物体识别-Object-recognition"><span class="nav-number">2.7.6.</span> <span class="nav-text">4.f 物体识别 Object recognition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-g-行人检测-Human-detection"><span class="nav-number">2.7.7.</span> <span class="nav-text">4.g 行人检测 Human detection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-h-人脸解析-Face-Parsing"><span class="nav-number">2.7.8.</span> <span class="nav-text">4.h 人脸解析 Face Parsing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-i-纹理分析-Texture-Analysis"><span class="nav-number">2.7.9.</span> <span class="nav-text">4.i 纹理分析 Texture Analysis</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-机器学习-Maching-Learning"><span class="nav-number">2.8.</span> <span class="nav-text">5 机器学习 Maching Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-a-生成对抗网络-GAN-Generative-Adversarial-Networks"><span class="nav-number">2.8.1.</span> <span class="nav-text">5.a 生成对抗网络 GAN Generative Adversarial Networks</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-b-深度学习-Deep-learning"><span class="nav-number">2.8.2.</span> <span class="nav-text">5.b 深度学习    Deep learning</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-c-能量优化-Energy-optimization"><span class="nav-number">2.8.3.</span> <span class="nav-text">5.c 能量优化    Energy optimization</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-d-模型设计-Model-design"><span class="nav-number">2.8.4.</span> <span class="nav-text">5.d 模型设计    Model design</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-e-空间降维-Dimention-reduction"><span class="nav-number">2.8.5.</span> <span class="nav-text">5.e 空间降维    Dimention reduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-f-聚类-Clustering"><span class="nav-number">2.8.6.</span> <span class="nav-text">5.f 聚类       Clustering</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-g-分类器-Classifier"><span class="nav-number">2.8.7.</span> <span class="nav-text">5.g 分类器     Classifier</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-开源库-Open-library"><span class="nav-number">2.9.</span> <span class="nav-text">6 开源库　Open library</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-数据集-Public-dataset"><span class="nav-number">2.10.</span> <span class="nav-text">7 数据集　Public dataset</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#7-a-其他方面-Other-datasets"><span class="nav-number">2.10.1.</span> <span class="nav-text">7.a 其他方面 Other datasets</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-b-人体检测-dataset-on-human-annotation"><span class="nav-number">2.10.2.</span> <span class="nav-text">7.b 人体检测 dataset on human annotation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-c-物体识别-dataset-on-object-recognition"><span class="nav-number">2.10.3.</span> <span class="nav-text">7.c 物体识别 dataset on object recognition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-d-显著检测方面-dataset-on-saliency-detection"><span class="nav-number">2.10.4.</span> <span class="nav-text">7.d 显著检测方面 dataset on saliency detection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-e-行为识别-dataset-on-action-recognition"><span class="nav-number">2.10.5.</span> <span class="nav-text">7.e 行为识别 dataset on action recognition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-f-物体分割-dataset-on-object-segmentation"><span class="nav-number">2.10.6.</span> <span class="nav-text">7.f 物体分割 dataset on object segmentation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-g-场景解析-dataset-on-scene-parsing"><span class="nav-number">2.10.7.</span> <span class="nav-text">7.g 场景解析 dataset on scene parsing</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-会议-期刊"><span class="nav-number">2.11.</span> <span class="nav-text">8 会议　期刊　</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CVPR-Computer-vision-and-Pattern-Reconition-计算机视觉和模式识别"><span class="nav-number">2.11.1.</span> <span class="nav-text">CVPR Computer vision  and  Pattern Reconition 计算机视觉和模式识别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ECCV-European-Conference-on-Computer-Vision-欧洲计算机视觉国际会议"><span class="nav-number">2.11.2.</span> <span class="nav-text">ECCV European Conference on Computer Vision   欧洲计算机视觉国际会议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ICCV-IEEE-International-Conference-on-Computer-Vision-国际计算机视觉大会"><span class="nav-number">2.11.3.</span> <span class="nav-text">ICCV IEEE International Conference on Computer Vision  国际计算机视觉大会</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">2.11.4.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AR-amp-VR"><span class="nav-number">2.12.</span> <span class="nav-text">AR&amp;VR</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.13.</span> <span class="nav-text"></span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
     </footer>
   </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2020/02/02/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
 
   
-</article>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
+<script src="/js/utils.js"></script>
 
-  
-    
+<script src="/js/motion.js"></script>
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li></ul>
-    </div>
-  </div>
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
 
 
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/02/02/t1/">t1</a>
-          </li>
-        
-          <li>
-            <a href="/2020/02/02/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
 
 
   
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
   
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
 
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
 </body>
 </html>
